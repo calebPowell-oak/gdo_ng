@@ -1,0 +1,12 @@
+:host {
+    background-color: #1c87c9;
+    border: none;
+    color: white;
+    padding: 20% 34%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    margin: 4% 2%;
+    cursor: pointer;
+}
