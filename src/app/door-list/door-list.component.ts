@@ -23,8 +23,8 @@ export class DoorListComponent implements OnInit {
   ngOnInit() {
   }
 
-  open(door) {
+  open(door: Door) {
     //alert(door.name + ' was opened.');
-    this.garageService.open(door.pinNumber);
+    this.garageService.open(door);
   }
 }

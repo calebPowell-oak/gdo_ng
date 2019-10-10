@@ -1,14 +1,22 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { environment } from '../environments/environment';
+import { Door } from './types';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GarageService {
 
-  constructor() { }
+  url: string;
 
-  open(pin){
-    //http req with pin to garage API
-    alert();
+  constructor(private http: HttpClient) {
+    this.url = environment.baseUrl;
+  }
+
+  open(door: Door){
+    this.http
+      .get(this.url + 'pin/' + door.pinNumber)
+      .subscribe();
   }
 }

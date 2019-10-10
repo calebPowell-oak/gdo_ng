@@ -2,11 +2,13 @@
     background-color: #1c87c9;
     border: none;
     color: white;
-    padding: 20% 34%;
+    padding: 20% 10%;
     text-align: center;
     text-decoration: none;
-    display: block;
-    font-size: 20px;
+    display: inline-block;
+    font-size: 200%;
     margin: 4% 2%;
     cursor: pointer;
+    max-width: 20%;
+    border-radius: 5%;
 }
